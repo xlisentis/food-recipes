@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Category } from './pages/Category';
 import { MealRecipe } from './pages/MealRecipe';
+import { NotFound } from './pages/NotFound';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <Route path='/' element={<Home />} />
                     <Route path='/category/:name' element={<Category />} />
                     <Route path='/meal/:id' element={<MealRecipe />} />
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
             </main>
             <Footer />

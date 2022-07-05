@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 function Header() {
     return (
         <nav className='cyan darken-4'>
             <div className='nav-wrapper'>
-                <a href='#!' className='brand-logo center'>
+                <Link to='/' className='brand-logo center'>
                     Recipes
-                </a>
+                </Link>
             </div>
         </nav>
     );
